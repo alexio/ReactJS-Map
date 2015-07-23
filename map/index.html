@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>Everyone loves Pretzels</title>
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+				 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+		<link rel="stylesheet" href="css/main.css"/>
+	</head>
+	<body>
+		<div id="map"></div>
+		<script type="text/template" class="template">
+			<h5>
+				<%- name %>
+			</h5>
+			<h6>
+				Phone: <%- phone %>
+			</h6>
+			<h6>
+				Email: <%- email %>
+			</h6>
+
+			<h6>Languages</h6>
+			<ul class="list">
+			       <% for(var i in languages) { %>
+			           <li><%= languages[i] %></li>
+			       <% } %>
+			</ul>
+			<h6>Skills:</h6>
+			<ul class="list">
+			       <% for(var i in skills) { %>
+			           <li><%= skills[i] %></li>
+			       <% } %>
+			</ul>
+
+		</script>
+		<script src="js/stringer.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>

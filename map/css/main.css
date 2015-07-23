@@ -1,0 +1,12 @@
+#map, .leaflet-container { 
+	height: 180%; 
+	width:180%;
+}
+
+.list {
+	list-style-type: none;
+}
+
+.list li {
+	margin-left: 10px;
+}
